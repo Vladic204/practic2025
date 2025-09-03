@@ -1,22 +1,19 @@
-import logo from './logo.svg';
+import React from 'react';
+import cars from './carsData'; // Importă datele
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Catalog Auto</h1>
+        <ul>
+          {cars.map((car) => (
+            <li key={car.id}>
+              {car.marca} {car.model} - {car.an} - {car.pret}€
+            </li>
+          ))}
+        </ul>
       </header>
     </div>
   );
