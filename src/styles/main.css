@@ -346,14 +346,15 @@ body {
 .price {
   font-size: 22px;
   font-weight: 700;
-  color: #d32f2f; /* roșu intens */
+  color: #1b53d5; /* roșu intens */
   margin-top: 10px;
-  background-color: #fff3f3;
+  background-color: #f4eeeef3;
   padding: 6px 12px;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(45, 42, 42, 0.1);
   display: inline-block;
 }
+
 
 
 
