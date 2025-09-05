@@ -1,18 +1,25 @@
-import "./styles.css";
+import React, { useContext } from "react";
+import { ThemeContext } from "../../context/ThemeContext";
+import "./style.css"; // Asigură-te că fișierul există
 
-const header = () => {
-    return (<header className="header">
-        <div className="header__wrapper">
-          <h1 className="header__title">
-            <strong>Hi, my name is <em>Yuri</em></strong><br />
-            a frontend developer
-          </h1>
-          <div className="header__text">
-            <p>with passion for learning and creating.</p>
-          </div>
-          <a href="#!" className="btn">Download CV</a>
-        </div>
-      </header>
- );
+function Header() {
+  const { theme, toggleTheme } = useContext(ThemeContext);
+
+  return (
+    <header className="header">
+      <div className="header__content">
+        <h1>Contacts</h1>
+
+        <a href="/cv.pdf" download className="download-cv">
+          Download CV
+        </a>
+
+        <button onClick={toggleTheme} className="theme-toggle">
+          {theme === "light" ? "🌞" : "🌙"}
+        </button>
+      </div>
+    </header>
+  );
 }
-export default header;
+
+export default Header;

@@ -15,6 +15,25 @@
 	/* Header */
 	--header-bg: var(--black);
 	--header-text: var(--white);
+	/* Light Theme */
+body.light {
+  background-color: white;
+  color: black;
+}
+
+/* Dark Theme */
+body.dark {
+  background-color: #121212;
+  color: white;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
 
 	/* Footer */
 	--footer-bg: var(--black);

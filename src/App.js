@@ -10,7 +10,10 @@ import Navbar from "./components/navbar/Navbar";
 import Home from "./pages/home";
 import Auto from "./pages/auto";
 
+
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 
 function App() {
   return (
@@ -20,6 +23,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/auto" element={<Auto />} />
+          
         </Routes>
         <footer className="footer">
           <div className="container">
